@@ -10,7 +10,11 @@ const Key = 'x-api-key'
 const Value = '<shared via Teams>'
 
 /**
- * GET request for finding BSN via basUrl
+ * GET request for finding:
+ * - BSN
+ * - Name
+ * - Surname
+ * - Date of birth
  */
 fetch(baseUrl+'/ingeschrevenpersonen/:burgerservicenummer?fields=burgerservicenummer,naam,geboorte.datum', {
     method: 'GET'
