@@ -51,3 +51,34 @@ fetch(baseUrl+'/ingeschrevenpersonen/:burgerservicenummer?fields=burgerservicenu
     }
 }
 */
+
+/**
+ * GET request for finding:
+ * - BSN
+ * - Date of birth
+ */
+ fetch(baseUrl+'/ingeschrevenpersonen/:burgerservicenummer?fields=burgerservicenummer,geboorte.datum', {
+    method: 'GET'
+});
+
+/**
+ * Example output for BSN = 999993872
+ 
+{
+    "_links": {
+        "self": {
+            "href": "https://www.haalcentraal.nl/haalcentraal/api/brp/ingeschrevenpersonen/999993872"
+        }
+    },
+    "geheimhoudingPersoonsgegevens": true,
+    "burgerservicenummer": "999993872",
+    "geboorte": {
+        "datum": {
+            "datum": "1959-04-17",
+            "jaar": 1959,
+            "maand": 4,
+            "dag": 17
+        }
+    }
+}
+*/
