@@ -97,7 +97,7 @@ const baseUrlNNP = `https://api.kvk.nl/api`
  * - address
  * - type
  */
- fetch(baseUrlNNP+'v1/zoeken?kvkNummer=<string>', {
+ fetch(baseUrlNNP+'/v1/zoeken?kvkNummer=<string>', {
     method: 'GET'
 });
 
