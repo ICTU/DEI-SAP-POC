@@ -1,22 +1,20 @@
 /**
- * baseUrl variable for identity
- */
-const baseUrl = 'https://www.haalcentraal.nl/haalcentraal/api/brp';
+ * baseUrl variable & authorization type API Key
+ * 
+ * Personal Records Database (BRP)
+ **/
+const KeyNP = 'x-api-key'
+const ValueNP = '<shared via Teams>'
+const baseUrlNP = 'https://www.haalcentraal.nl/haalcentraal/api/brp';
 
 /**
- * authorization type API Key
- */
-const Key = 'x-api-key'
-const Value = '<shared via Teams>'
-
-/**
- * GET request for finding:
+ * GET request Personal Records Database for finding:
  * - BSN
  * - Name
  * - Surname
  * - Date of birth
  */
-fetch(baseUrl+'/ingeschrevenpersonen/:burgerservicenummer?fields=burgerservicenummer,naam,geboorte.datum', {
+fetch(baseUrlNP+'/ingeschrevenpersonen/:burgerservicenummer?fields=burgerservicenummer,naam,geboorte.datum', {
     method: 'GET'
 });
 
@@ -53,11 +51,11 @@ fetch(baseUrl+'/ingeschrevenpersonen/:burgerservicenummer?fields=burgerservicenu
 */
 
 /**
- * GET request for finding:
+ * GET request Personal Records Database for finding:
  * - BSN
  * - Date of birth
  */
- fetch(baseUrl+'/ingeschrevenpersonen/:burgerservicenummer?fields=burgerservicenummer,geboorte.datum', {
+ fetch(baseUrlNP+'/ingeschrevenpersonen/:burgerservicenummer?fields=burgerservicenummer,geboorte.datum', {
     method: 'GET'
 });
 
@@ -80,5 +78,49 @@ fetch(baseUrl+'/ingeschrevenpersonen/:burgerservicenummer?fields=burgerservicenu
             "dag": 17
         }
     }
+}
+*/
+
+/**
+ * baseUrl variable & authorization type API Key
+ * 
+ * Trade Register
+**/
+const KeyNNP = `apikey`
+const ValueNNP = `<shared via Teams>`
+const baseUrlNNP = `https://api.kvk.nl/api`
+
+/**
+ * GET request Trade Register for finding
+ * - kvkNumber
+ * - trade name
+ * - address
+ * - type
+ */
+ fetch(baseUrlNNP+'v1/zoeken?kvkNummer=<string>', {
+    method: 'GET'
+});
+
+/**
+ * Example output for kvkNummer = 27198742
+ 
+{
+    "pagina": 1,
+    "aantal": 10,
+    "totaal": 1,
+    "resultaten": [
+        {
+            "kvkNummer": "27198742",
+            "handelsnaam": "Stichting ICTU",
+            "straatnaam": "Wilhelmina van Pruisenweg",
+            "plaats": "'s-Gravenhage",
+            "type": "rechtspersoon",
+            "_links": {
+                "basisprofiel": {
+                    "href": "https://api.kvk.nl/api/v1/basisprofielen/27198742"
+                }
+            }
+        }
+    ]
 }
 */
