@@ -24,3 +24,9 @@ social security number | situation
 999990421 | multiple children, registered and not registered
 
 ## Test legal entities
+Below you will find the KVK numbers (and corresponding legal business form) applicable for our tests. Please note that these are not dummy test cases, but existing registrations.
+KVK number | trade name | legal form
+---------------- | :------- | :-------
+27198742 | Stichting ICTU | Stichting
+16053535 | SAP Nederland B.V. | BV
+78157145 | Digital Ecosystems Institute B.V. | BV
