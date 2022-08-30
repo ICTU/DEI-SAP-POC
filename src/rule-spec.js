@@ -124,3 +124,71 @@ const baseUrlNNP = `https://api.kvk.nl/api`
     ]
 }
 */
+
+/**
+ * baseUrl variable & authorization type API Key
+ * 
+ * Dutch Land Registry (BRK)
+**/
+const KeyBRK = `x-api-key`
+const ValueBRK = `<shared via Teams>`
+const baseUrlBRK = `https://api.brk.kadaster.nl/esd-eto-apikey/bevragen/v1`
+
+/**
+ * GET request Dutch Land Registry (BRK) for finding
+ * - onject identification
+ * - cadastral designation
+ * - postcal code
+ * - mortgage identifications
+ */
+ fetch(baseUrlBRK+'/kadastraalonroerendezaken?fields=identificatie,kadastraleAanduiding,adressen,hypotheekIdentificaties&nummeraanduidingIdentificatie=<string>', {
+    method: 'GET'
+});
+
+/**
+ * Example output for number designation identification = 0200200000003732
+
+{
+    "_links": {
+        "self": {
+            "href": "/kadastraalonroerendezaken?fields=identificatie,kadastraleAanduiding,adressen,hypotheekIdentificaties&nummeraanduidingIdentificatie=0200200000003732"
+        }
+    },
+    "_embedded": {
+        "kadastraalOnroerendeZaken": [
+            {
+                "identificatie": "76870482670000",
+                "domein": "NL.IMKAD.KadastraalObject",
+                "type": "perceel",
+                "kadastraleAanduiding": "Beekbergen K 4826",
+                "adressen": [
+                    {
+                        "straat": "Atalanta",
+                        "huisnummer": 25,
+                        "postcode": "7361EW",
+                        "woonplaats": "Beekbergen",
+                        "nummeraanduidingIdentificatie": "0200200000003732",
+                        "adresregel1": "Atalanta 25",
+                        "adresregel2": "7361EW Beekbergen",
+                        "koppelingswijze": {
+                            "code": "ADM_GEO",
+                            "waarde": "administratief en geometrisch"
+                        },
+                        "adresseerbaarObjectIdentificatie": "0200010000132504"
+                    }
+                ],
+                "hypotheekIdentificaties": [
+                    "1000002150",
+                    "35139325"
+                ],
+                "_links": {
+                    "self": {
+                        "href": "/kadastraalonroerendezaken/76870482670000"
+                    }
+                }
+            }
+        ]
+    }
+}
+*/
+
