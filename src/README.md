@@ -38,6 +38,6 @@ test case | object odentification | cadastral designation | postal code | number
 1 owner | 76870482670000 | Beekbergen K 4826 | 7361EW 25 | 0200200000003732 | 2x mortgage
 
 ## Test scenario's
-Of the test cases that we have available for natural persons, legal entities and cadastral objects, we formulate test scenarios in the form of user stories.
+Of the test cases that we have available for natural persons, legal entities and real estate objects, we formulate test scenarios in the form of user stories.
 
-1. As a buyer 999993926 I want to buy real estate object **Beekbergen K 4826** from seller 999995017, whereby only the legal capacity for the seller and the buyer are checked [[RULE SPEC] issue #8](https://github.com/ICTU/DEI-SAP-POC/issues/8).
+1. As a buyer **999993926** I want to buy real estate object **Beekbergen K 4826** from seller **999995017**, whereby only the legal capacity for the seller and the buyer are checked [[RULE SPEC] issue #8](https://github.com/ICTU/DEI-SAP-POC/issues/8).
