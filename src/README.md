@@ -5,7 +5,7 @@ Finally, for the carefree real estate use case, we combine those test cases for 
 
 ## Test subjects
 
-This table contains the social security numbers of test persons for specific situations with which the Personal Records Database API can be tested.
+This table contains the social security numbers of test persons for specific situations with which the Personal Records Database API can be tested [code snippet example](https://github.com/ICTU/DEI-SAP-POC/blob/2aac1f969316f7780fed99d85180f4600135d7db/src/rule-spec.js#L11).
 social security number | situation
 ---------------- | :-------
 999993847 | parents, partner, children, BAG address, residence under investigation
@@ -24,7 +24,7 @@ social security number | situation
 999990421 | multiple children, registered and not registered
 
 ## Test legal entities
-Below you will find the KVK numbers (and corresponding legal business form) applicable for our tests. Please note that these are not dummy test cases, but existing registrations.
+Below you will find the KVK numbers (and corresponding legal business form) applicable for our tests. Please note that these are not dummy test cases, but existing registrations [code snippet example](https://github.com/ICTU/DEI-SAP-POC/blob/2aac1f969316f7780fed99d85180f4600135d7db/src/rule-spec.js#L94).
 KVK number | trade name | legal form
 ---------------- | :------- | :-------
 27198742 | Stichting ICTU | Stichting
@@ -32,7 +32,7 @@ KVK number | trade name | legal form
 78157145 | Digital Ecosystems Institute B.V. | BV
 
 ## Test real estate objects
-The table below contains the test cases for specific situations with which test scenarios can be performed.
+The table below contains the test cases for specific situations with which test scenarios can be performed [code snippet example](https://github.com/ICTU/DEI-SAP-POC/blob/2aac1f969316f7780fed99d85180f4600135d7db/src/rule-spec.js#L138).
 test case | object odentification | cadastral designation | postal code | number designation identification | particulars
 ---------------- | :------- | :------- | :------- | :------- | :-------
 1 owner | 76870482670000 | Beekbergen K 4826 | 7361EW 25 | 0200200000003732 | 2x mortgage
