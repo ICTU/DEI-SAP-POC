@@ -30,3 +30,14 @@ KVK number | trade name | legal form
 27198742 | Stichting ICTU | Stichting
 16053535 | SAP Nederland B.V. | BV
 78157145 | Digital Ecosystems Institute B.V. | BV
+
+## Test real estate objects
+The table below contains the test cases for specific situations with which test scenarios can be performed.
+test case | object odentification | cadastral designation | postal code | number designation identification | particulars
+---------------- | :------- | :------- | :------- | :------- | :-------
+1 owner | 76870482670000 | Beekbergen K 4826 | 7361EW 25 | 0200200000003732 | 2x mortgage
+
+## Test scenario's
+Of the test cases that we have available for natural persons, legal entities and cadastral objects, we formulate test scenarios in the form of user stories.
+
+1. As a buyer 999993926 I want to buy real estate object 76870482670000 from seller 999995017, whereby only the legal capacity for the seller and the buyer are checked [[RULE SPEC] issue #8](https://github.com/ICTU/DEI-SAP-POC/issues/8).
