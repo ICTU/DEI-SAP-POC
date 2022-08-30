@@ -1,5 +1,5 @@
 ## Tests
-Here we describe the different test cases for natural persons, legal entities and cadastral objects that we can query with the various APIs.
+Here we describe the different test cases for natural persons, legal entities and real estate objects that we can query with the various APIs.
 
 Finally, for the carefree real estate use case, we combine those test cases for the different scenarios
 
@@ -24,7 +24,7 @@ social security number | situation
 999990421 | multiple children, registered and not registered
 
 ## Test legal entities
-Below you will find the KVK numbers (and corresponding legal business form) applicable for our tests. Please note that these are not dummy test cases, but existing registrations [code snippet example](https://github.com/ICTU/DEI-SAP-POC/blob/2aac1f969316f7780fed99d85180f4600135d7db/src/rule-spec.js#L94).
+Below you will find the KVK numbers (and corresponding legal business form) applicable for our tests [code snippet example](https://github.com/ICTU/DEI-SAP-POC/blob/2aac1f969316f7780fed99d85180f4600135d7db/src/rule-spec.js#L94). Please note that these are not dummy test cases, but existing registrations.
 KVK number | trade name | legal form
 ---------------- | :------- | :-------
 27198742 | Stichting ICTU | Stichting
