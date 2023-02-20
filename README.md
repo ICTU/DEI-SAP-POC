@@ -8,6 +8,9 @@ The parties wish to collaborate on the development, testing, and demonstration o
 
 The parties acknowledge that Technology Collaboration is exploratory in nature and there is no assurance that the POC or the Parties’ products, services or technology involved in the Technology Collaboration will be completed or reach commercialization. The parties do not intend the Technology Collaboration to establish any form of exclusive business relationship or be interpreted so as to restrict, inhibit, prevent or limit in any way the standard business activities of the parties, including without limitation the parties’ respective arrangements with their customers, partners, and service providers.
 
+## Repository Owner
+The repository owner is Steven Gort. He can be contacted via mailto:steven.gort@ictu.nl.
+
 ## Content
 This repo contains the elaborations of developing and testing a Rules Service that:
 
